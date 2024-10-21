@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+
+/*Estilo Impressora*/
+
+* {
+    padding: 5px;
+    margin: 5px;
+}
+html {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    
+}
+
+menu {
+    display: none;
+}
+article::after {
+    content: 'Esse atigo foi impresso por mim';
+
+}
+main {
+    width: 100%;
+    text-align: justify;
+}
+header > h1{
+    background-color: none;
+}

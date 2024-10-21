@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    
+}
+body {
+    background-image: url(../mq02/imagens/cev-landscape.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: left bottom;
+}
+h1 {
+    color: aliceblue;
+    
+    padding: 10px;
+}

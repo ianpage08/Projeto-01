@@ -6,17 +6,21 @@
     <title>Media query</title>
     <link rel="stylesheet" href="style.css" media="screen">
     <link rel="stylesheet" href="estilo/impressora.css" media="print">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
    
 </head>
 <body>
     <header>
         <h1>Jogos</h1>
-        <menu>
+        <span  class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu  id= "menu" >
+
             <ul>
-                <li>Preferidos</li>
-                <li>platinas</li>
-                <li>platinas futuras</li>
-                <li>jogos para jogar</li>
+                <li><a href="#">lista</a></li>
+                <li><a href="#">Preferidos</a></li>
+                <li><a href="#">platinas</a></li>
+                <li><a href="#">platinas futuras</a></li>
+                <li><a href="#">jogos para jogar</a></li>
             </ul>
         </menu>
     </header>
@@ -25,11 +29,22 @@
             <h2> meus jogos 
             </h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quasi veritatis tenetur non nam reprehenderit, architecto quos velit inventore nulla veniam et repellat dolores adipisci, quia ab laborum blanditiis nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nemo enim impedit iure, inventore voluptatem illum at harum expedita ratione tenetur doloribus molestias sapiente? Rem repellendus recusandae ullam eveniet tenetur!</p>
+            <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam est perspiciatis quis necessitatibus temporibus, nam nesciunt libero maxime cupiditate! Earum cum nulla sit rerum vero aliquid dolore impedit temporibus facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus, architecto maiores nam quidem sint aut, quae hic consectetur sit minima non magnam aliquid cupiditate doloremque aperiam, odio quo officia.</p>
+            <br>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quasi veritatis tenetur non nam reprehenderit, architecto quos velit inventore nulla veniam et repellat dolores adipisci, quia ab laborum blanditiis nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nemo enim impedit iure, inventore voluptatem illum at harum expedita ratione tenetur doloribus molestias sapiente? Rem repellendus recusandae ullam eveniet tenetur!</p>
+            <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam est perspiciatis quis necessitatibus temporibus, nam nesciunt libero maxime cupiditate! Earum cum nulla sit rerum vero aliquid dolore impedit temporibus facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus, architecto maiores nam quidem sint aut, quae hic consectetur sit minima non magnam aliquid cupiditate doloremque aperiam, odio quo officia.</p>
         </Article>
     </main>
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            }
+            else { menu.style.display = 'block'}
+        }
+    </script>
     
 </body>
 </html>
